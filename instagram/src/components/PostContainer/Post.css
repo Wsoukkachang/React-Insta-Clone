@@ -1,0 +1,23 @@
+.thumbnail {
+    margin-top: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.image {
+    display: flex;
+    width: 300px;
+    height: 300px;
+} 
+
+.container-name {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 0 auto;
+}
+
+.user {
+    margin:0 auto;
+}
