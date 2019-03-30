@@ -1,5 +1,5 @@
 .thumbnail {
-    margin-top: 30px;
+    margin: 2% 2%;
     width: 20px;
     height: 20px;
     border-radius: 50px;
@@ -7,17 +7,29 @@
 
 .image {
     display: flex;
-    width: 300px;
-    height: 300px;
+    margin:0 auto;
+    width: 400px;
+    height: 400px;
 } 
 
 .container-name {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
     margin: 0 auto;
+    width: 400px;
 }
 
-.user {
+.container-user {
     margin:0 auto;
+}
+
+h6 {
+    display: flex;
+    margin: 0% 1% 1% 0%;
+}
+
+p {
+    display: flex;
+    margin: 0% 1% 1% 0%;
+    font-size: 12px;
 }

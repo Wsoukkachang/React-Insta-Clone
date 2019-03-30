@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  border: 1px solid black;
+  width: 400px;
 }
 
 .App-logo {
@@ -35,9 +37,14 @@
 .CommentSection {
   display: flex;
   flex-direction: column;
+  width: 400px;
+  margin:0 auto;
+  
 }
 
 .Comment {
   display: flex;
   flex-direction: row;
+  border: 1px solid black;
+  width: 400px;
 }
