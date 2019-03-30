@@ -12,7 +12,7 @@ const PostContainer = props => {
             likes={props.post.likes}
             />
 
-            <CommentSection comments={props.post.comments}/>
+            <CommentSection comments={props.post.comments} timeStamp={props.post.timestamp}/>
         </div>
         );
 };

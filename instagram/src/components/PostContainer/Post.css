@@ -1,5 +1,5 @@
 .thumbnail {
-    margin: 2% 2%;
+
     width: 20px;
     height: 20px;
     border-radius: 50px;
@@ -7,29 +7,44 @@
 
 .image {
     display: flex;
-    margin:0 auto;
-    width: 400px;
-    height: 400px;
+    margin: 0px -10px;
+    width: 600px;
+    height: 600px;
 } 
 
+/* container for small user image and login name */
 .container-name {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
-    width: 400px;
+    width: 580px;
+    height: 35px;
 }
 
 .container-user {
     margin:0 auto;
 }
 
+h5 {
+    display: flex;
+    font-size: 12px;
+    margin: 0% 0% 0% 2%;
+}
+
 h6 {
     display: flex;
+    font-size: 12px;
     margin: 0% 1% 1% 0%;
 }
 
 p {
     display: flex;
-    margin: 0% 1% 1% 0%;
     font-size: 12px;
+    margin: 0% 1% 1% 0%;
+    width: 580px;
+}
+
+.interactions {
+    display: flex;
+    align-content: flex-start;
+    margin: 0;
 }

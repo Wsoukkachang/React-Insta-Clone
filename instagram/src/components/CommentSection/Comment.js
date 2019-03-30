@@ -5,9 +5,9 @@ const Comment = props => {
     //console.log(props);
 
     return (
-        <div className="Comment">
-        <h6>{props.username}</h6>
-        <p>{props.text}</p>
+        <div className="comment">
+        
+        <p><h6>{props.username}</h6> {props.text}</p>
         </div>
     );
 };

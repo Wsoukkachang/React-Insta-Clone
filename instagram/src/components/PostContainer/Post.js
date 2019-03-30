@@ -7,14 +7,15 @@ const Post = props => {
 
     return (
         <div className="container-user"> 
+        
             <section className="container-name">
             <img className="thumbnail" src={props.thumbnail} alt='' />
-            <h6>{props.username}</h6>
+            <h5>{props.username}</h5>
             </section>
 
             <img className="image" src={props.image} alt='' />
             
-            <div className="interaction">
+            <div className="interactions">
             <i className="far fa-heart"></i>
             <i className="far fa-comment"></i>
             <h6>{props.likes} likes</h6>
