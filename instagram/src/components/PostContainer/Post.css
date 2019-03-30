@@ -1,22 +1,21 @@
 .thumbnail {
-
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
 }
 
 .image {
     display: flex;
     margin: 0px -10px;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
 } 
 
 /* container for small user image and login name */
 .container-name {
     display: flex;
     flex-direction: row;
-    width: 580px;
+    width: 480px;
     height: 35px;
 }
 
@@ -27,7 +26,7 @@
 h5 {
     display: flex;
     font-size: 12px;
-    margin: 0% 0% 0% 2%;
+    margin: 0.5% 0% 0% 2%;
 }
 
 h6 {
@@ -39,12 +38,27 @@ h6 {
 p {
     display: flex;
     font-size: 12px;
-    margin: 0% 1% 1% 0%;
-    width: 580px;
+    margin: 0% 1% 0% 0%;
+    width: 480px;
 }
 
 .interactions {
     display: flex;
     align-content: flex-start;
-    margin: 0;
+    margin: 10px 0px;
+}
+
+.interactions .fa-heart {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.fa-comment {
+    width: 20px;
+    height: 20px;
+}
+
+.likes {
+    margin-bottom: 10px;
 }

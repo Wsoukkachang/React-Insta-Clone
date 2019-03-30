@@ -1,5 +1,9 @@
 .comment {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    width: 480px;
     word-wrap: break-word;
     text-align: left;
     margin-bottom: 3px;
-} 
+  }

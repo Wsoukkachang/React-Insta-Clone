@@ -18,8 +18,9 @@ const Post = props => {
             <div className="interactions">
             <i className="far fa-heart"></i>
             <i className="far fa-comment"></i>
-            <h6>{props.likes} likes</h6>
             </div>
+            
+            <h6 className="likes">{props.likes} likes</h6>
         </div>
         
 
