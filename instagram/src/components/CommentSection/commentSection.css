@@ -24,4 +24,48 @@
 
 .addComment:focus {
     outline: none;
+}
+
+.interactButtons {
+    width: 55px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.likes {
+    display: flex;
+}
+
+.liked {
+    color: red;
+}
+
+i {
+    font-size: 20px;
+    cursor: pointer;
 } 
+
+.interactButtons {
+    display: flex;
+    align-content: flex-start;
+    margin: 10px 0px;
+}
+
+.interactButtons .fa-heart {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.fa-comment {
+    width: 20px;
+    height: 20px;
+}
+
+.likes {
+    margin-bottom: 10px;
+}

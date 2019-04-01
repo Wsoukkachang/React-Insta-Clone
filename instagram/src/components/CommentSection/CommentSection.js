@@ -15,6 +15,8 @@ class CommentSection extends Component {
     constructor(props) {
         super();
         this.state = {
+            likes: props.likes,
+            liked: false,
             comments: props.comments,
             newcomment: ""
         };
@@ -37,10 +39,43 @@ class CommentSection extends Component {
             }
         })
     };
+    
+    giveLike = () => {
+        if (this.state.liked === false) {
+            this.setState(prevState => {
+                return {
+                    likes: (prevState.likes + 1),
+                    liked: true
+                }
+            })
+        } else {
+            this.setState(prevState => {
+                return {
+                    likes: (prevState.likes - 1),
+                    liked: false
+                }
+            })
+        }
+    }
 
     render () {
+        let liked = this.state.liked ? "liked" : "";
+
         return (
             <div className = "commentSection">
+
+                <section className="interactButtons">
+                    <div className={`${liked}`}>
+                        <i className="far fa-heart" onClick={this.giveLike}></i>
+                    </div>
+                    <i className="far fa-comment"></i>
+                </section>
+
+                <div className="likes">
+                    <h6>{this.state.likes} likes</h6>
+                </div>
+
+
                 {this.state.comments.map(comment => 
                 <Comment username={comment.username} text={comment.text} key={comment.text}/>
                 )}

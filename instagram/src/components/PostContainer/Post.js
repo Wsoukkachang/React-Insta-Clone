@@ -14,13 +14,6 @@ const Post = props => {
             </section>
 
             <img className="image" src={props.image} alt='' />
-            
-            <div className="interactions">
-            <i className="far fa-heart"></i>
-            <i className="far fa-comment"></i>
-            </div>
-            
-            <h6 className="likes">{props.likes} likes</h6>
         </div>
         
 

@@ -41,24 +41,3 @@ p {
     margin: 0% 1% 0% 0%;
     width: 480px;
 }
-
-.interactions {
-    display: flex;
-    align-content: flex-start;
-    margin: 10px 0px;
-}
-
-.interactions .fa-heart {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-.fa-comment {
-    width: 20px;
-    height: 20px;
-}
-
-.likes {
-    margin-bottom: 10px;
-}
