@@ -1,11 +1,12 @@
 import React from 'react';
+import './searchBar.css';
 
 const SearchBar = props => {
     return (
         <div className="searchBar">
             <div className="home">
                 <i className="fab fa-instagram"></i>
-                <h1>Instragram</h1>
+                <h1>Instagram</h1>
             </div>
             <form>
                 <input name="search" placeholder="Search" />

@@ -1,36 +1,8 @@
 .App {
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   width: 500px;
 }
-
-.searchBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid grey;
-  margin-bottom: 12px;
-}
-
-.home {
-  display: flex;
-  align-items: center;
-}
-
-.home h1 {
-  padding-left: 20px;
-  margin-left: 20px;
-  border-left: 1px solid gainsboro;
-  font-size: 18px;
-}
-
-.explore {
-  width: 100px;
-  display: flex;
-  justify-content: space-between;
-} 
-
 .fa-heart {
   margin-right: 0px;
 }
