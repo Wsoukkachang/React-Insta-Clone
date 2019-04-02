@@ -42,6 +42,7 @@
 
 .liked {
     color: red;
+    overflow: hidden;
 }
 
 i {

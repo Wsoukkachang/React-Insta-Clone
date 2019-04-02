@@ -9,7 +9,12 @@ const SearchBar = props => {
                 <h1>Instagram</h1>
             </div>
             <form onSubmit={props.search}>
-                <input placeholder="Search" value={props.value} onChange={props.handleChange} />
+                <input 
+                    name="search"
+                    placeholder="Search" 
+                    value={props.value} 
+                    onChange={props.handleChange} 
+                />
             </form>
             <div className="explore">
                 <i className="far fa-compass"></i>
