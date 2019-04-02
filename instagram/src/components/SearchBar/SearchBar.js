@@ -8,8 +8,8 @@ const SearchBar = props => {
                 <i className="fab fa-instagram"></i>
                 <h1>Instagram</h1>
             </div>
-            <form>
-                <input name="search" placeholder="Search" />
+            <form onSubmit={props.search}>
+                <input placeholder="Search" value={props.value} onChange={props.handleChange} />
             </form>
             <div className="explore">
                 <i className="far fa-compass"></i>
