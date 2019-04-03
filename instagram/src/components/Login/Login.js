@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './login.css';
 
 class Login extends Component {
     constructor(props) {
@@ -8,23 +9,28 @@ class Login extends Component {
         }
     }
 
-    handleChange = event => {
-        this.setState({username: event.target.value})
+    handleChange = e => {
+        this.setState({username: e.target.value})
       }
 
-    login = event => {
-        localStorage.setItem('username', [this.state.username])
+    login = e => {
+        if (this.state.username !== null) {
+            localStorage.setItem('username', [this.state.username])
+        }
+        else {
+            alert("empty username")
+        }
     }
 
     render() {
         return (
-            <Container>
-                <Form onSubmit={this.login}>
-                    <Input placeholder="Username" value={this.state.value} onChange={this.handleChange}/>
-                    <Input placeholder="Password" />
-                    <Button>Log In</Button>
-                </Form>
-            </Container>
+            <div>
+                <form className="loginform" onSubmit={this.login}>
+                    <input placeholder="Username" value={this.state.value} onChange={this.handleChange}/>
+                    <input placeholder="Password" />
+                    <button>Log In</button>
+                </form>
+            </div>
         )
     }
 }

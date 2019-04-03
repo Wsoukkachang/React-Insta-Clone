@@ -32,7 +32,7 @@ class CommentSection extends Component {
         this.setState(({comments, newcomment}) => {
             return {
                 comments: [...comments, {
-                    username: 'William',
+                    username: localStorage.getItem('username'),
                     text: newcomment
                 }],
                 newcomment: ""
