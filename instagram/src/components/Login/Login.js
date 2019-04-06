@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './login.css';
+import {Container, Form, Input, Button, H1} from '../../../src/StyledComponents';
 
 class Login extends Component {
     constructor(props) {
         super();
         this.state = {
-
+            username: null
         }
     }
 
@@ -18,7 +18,7 @@ class Login extends Component {
             localStorage.setItem('username', [this.state.username])
         }
         else {
-            alert("empty username")
+            alert("Please enter username")
         }
     }
 
@@ -26,9 +26,10 @@ class Login extends Component {
         return (
             <div>
                 <form className="loginform" onSubmit={this.login}>
+                    <H1>Instagram</H1>
                     <input placeholder="Username" value={this.state.value} onChange={this.handleChange}/>
                     <input placeholder="Password" />
-                    <button>Log In</button>
+                    <Button primary expand color="primary">Log In</Button>
                 </form>
             </div>
         )

@@ -33,6 +33,11 @@ class PostsPage extends Component {
             })
         })
     }
+    
+    logOut = e => {
+      localStorage.clear();
+      window.location.reload();
+    }
 
     render() {
     //   console.log(this.state);
@@ -43,6 +48,7 @@ class PostsPage extends Component {
             value={this.state.value} 
             handleChange={this.handleChange}
             search={this.search}
+            logout={this.logOut}
           />
 
           <div>

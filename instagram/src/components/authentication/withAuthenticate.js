@@ -1,7 +1,7 @@
 import React from 'react';
 import Login from '../Login/Login'
 
-const withAuthentication = PostsPage => Login => {
+const withAuthentication = PostsPage => LoginPage => {
 
     return class extends React.Component {
         constructor(props) {
@@ -20,7 +20,7 @@ const withAuthentication = PostsPage => Login => {
         render() {
             return (
                 <div>
-                    {this.state.loggedIn === true ? <PostsPage /> : <Login />}
+                    {this.state.loggedIn === true ? <PostsPage /> : <LoginPage />}
                 </div>
             )
         }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Post.css';
 import PropTypes from 'prop-types';
+import { Button } from 'reactstrap';
 
 const Post = props => {
     console.log(props);
